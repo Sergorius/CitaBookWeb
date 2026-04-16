@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CitaBook | Поиск цитат в книгах</title>
+  <meta name="description" content="CitaBook помогает находить яркие цитаты в EPUB и FB2, сохранять их в базе и возвращаться к любимым фрагментам за секунды.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand">
+          <img src="./assets/logo.svg" alt="Логотип CitaBook">
+          <div>
+            <p class="eyebrow" data-i18n="brandEyebrow">Desktop App</p>
+            <strong>CitaBook</strong>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <div class="lang-switcher" aria-label="Language switcher">
+            <button class="lang-button active" type="button" data-lang="ru">RU</button>
+            <button class="lang-button" type="button" data-lang="en">EN</button>
+            <button class="lang-button" type="button" data-lang="sk">SK</button>
+          </div>
+          <a href="#features" data-i18n="navFeatures">Возможности</a>
+          <a href="#workflow" data-i18n="navWorkflow">Как это работает</a>
+          <a class="button ghost" href="#download" data-i18n="navLaunch">Запустить проект</a>
+        </div>
+      </nav>
+
+      <section class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="kicker" data-i18n="heroKicker">Поиск цитат без ручного перелистывания</p>
+          <h1 data-i18n="heroTitle">Красивый и быстрый способ находить сильные фразы в вашей библиотеке книг</h1>
+          <p class="hero-text" data-i18n="heroText">
+            Приложение сканирует EPUB и FB2, ищет совпадения по ключевым словам,
+            сохраняет любимые фрагменты в базу и открывает цитаты в аккуратных карточках.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#download" data-i18n="heroPrimary">Открыть локально</a>
+            <a class="button secondary" href="#features" data-i18n="heroSecondary">Посмотреть возможности</a>
+          </div>
+          <ul class="hero-points">
+            <li data-i18n="heroPoint1">Поиск по коллекции книг за секунды</li>
+            <li data-i18n="heroPoint2">Поддержка EPUB и FB2</li>
+            <li data-i18n="heroPoint3">Русский, English и Slovenčina</li>
+          </ul>
+        </div>
+
+        <div class="hero-panel reveal delay-1">
+          <div class="window-card">
+            <div class="window-top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="window-body">
+              <aside class="side-list">
+                <p data-i18n="libraryLabel">Библиотека</p>
+                <div class="book-pill active" data-i18n="book1">451° по Фаренгейту</div>
+                <div class="book-pill" data-i18n="book2">Мастер и Маргарита</div>
+                <div class="book-pill" data-i18n="book3">Pride and Prejudice</div>
+              </aside>
+              <div class="search-preview">
+                <div class="search-box" data-i18n="searchPreview">искать: свобода</div>
+                <div class="quote-card">
+                  <span class="tag" data-i18n="foundTag">Найдено</span>
+                  <h3 data-i18n="quoteTitle">Цитата дня</h3>
+                  <p data-i18n="quoteText">
+                    «Мы нуждаемся не в том, чтобы на нас сыпались факты, а в том,
+                    чтобы научиться видеть в них смысл».
+                  </p>
+                  <div class="meta">
+                    <span>EPUB / FB2</span>
+                    <span>Saved to SQLite</span>
+                  </div>
+                </div>
+                <div class="stats-row">
+                  <div>
+                    <strong>3</strong>
+                    <span data-i18n="stats1">языка интерфейса</span>
+                  </div>
+                  <div>
+                    <strong>2</strong>
+                    <span data-i18n="stats2">формата книг</span>
+                  </div>
+                  <div>
+                    <strong>1</strong>
+                    <span data-i18n="stats3">коллекция цитат</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-note">
+            <span data-i18n="noteLabel">Новая находка</span>
+            <strong data-i18n="noteText">Сохраняйте цитаты двойным кликом</strong>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section intro reveal">
+        <div class="section-head">
+          <p class="section-label" data-i18n="audienceLabel">Для кого</p>
+          <h2 data-i18n="audienceTitle">Подходит читателям, авторам, преподавателям и всем, кто собирает сильные мысли</h2>
+        </div>
+        <div class="intro-grid">
+          <article>
+            <h3 data-i18n="audience1Title">Читатели</h3>
+            <p data-i18n="audience1Text">Собирайте любимые фрагменты в одной базе и возвращайтесь к ним без повторного поиска по файлам.</p>
+          </article>
+          <article>
+            <h3 data-i18n="audience2Title">Исследователи</h3>
+            <p data-i18n="audience2Text">Находите упоминания тем, мотивов и ключевых формулировок сразу по всей локальной библиотеке.</p>
+          </article>
+          <article>
+            <h3 data-i18n="audience3Title">Команды и преподаватели</h3>
+            <p data-i18n="audience3Text">Готовьте подборки цитат для лекций, заметок, презентаций и творческих проектов заметно быстрее.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section features" id="features">
+        <div class="section-head reveal">
+          <p class="section-label" data-i18n="featuresLabel">Возможности</p>
+          <h2 data-i18n="featuresTitle">Функции, которые делают поиск по книгам действительно удобным</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span>01</span>
+            <h3 data-i18n="feature1Title">Умный поиск по цитатам</h3>
+            <p data-i18n="feature1Text">Введите слово или фразу, и приложение покажет найденные фрагменты вместе с книгой и автором.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <span>02</span>
+            <h3 data-i18n="feature2Title">Сканирование локальной папки</h3>
+            <p data-i18n="feature2Text">Выберите каталог с книгами, а программа сама обработает EPUB и FB2 и добавит данные в базу.</p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <span>03</span>
+            <h3 data-i18n="feature3Title">Сохранённые цитаты</h3>
+            <p data-i18n="feature3Text">Лучшие фрагменты не теряются: их можно сохранять, открывать в красивой карточке и удалять при необходимости.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>04</span>
+            <h3 data-i18n="feature4Title">Встроенный просмотр книг</h3>
+            <p data-i18n="feature4Text">Карточки книг и режим чтения помогают быстро проверить контекст перед тем, как сохранить нужную мысль.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <span>05</span>
+            <h3 data-i18n="feature5Title">Многоязычный интерфейс</h3>
+            <p data-i18n="feature5Text">Переключайтесь между русским, английским и словацким языком прямо в настройках приложения.</p>
+          </article>
+          <article class="feature-card accent reveal delay-2">
+            <span>06</span>
+            <h3 data-i18n="feature6Title">Локально и приватно</h3>
+            <p data-i18n="feature6Text">SQLite-база хранится рядом с приложением, так что ваша библиотека и заметки остаются под вашим контролем.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workflow" id="workflow">
+        <div class="section-head reveal">
+          <p class="section-label" data-i18n="workflowLabel">Сценарий</p>
+          <h2 data-i18n="workflowTitle">Как выглядит работа с приложением</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <strong>1</strong>
+            <div>
+              <h3 data-i18n="workflow1Title">Выбираете папку с книгами</h3>
+              <p data-i18n="workflow1Text">Приложение сканирует библиотеку и готовит тексты к быстрому поиску.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal delay-1">
+            <strong>2</strong>
+            <div>
+              <h3 data-i18n="workflow2Title">Ищете слово, тему или формулировку</h3>
+              <p data-i18n="workflow2Text">Результаты сразу показывают цитату, название книги и автора.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal delay-2">
+            <strong>3</strong>
+            <div>
+              <h3 data-i18n="workflow3Title">Сохраняете лучшие находки</h3>
+              <p data-i18n="workflow3Text">Избранные фрагменты попадают в отдельную коллекцию, к которой легко вернуться позже.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quote-band reveal">
+        <div class="quote-band-card">
+          <p class="section-label" data-i18n="ideaLabel">Идея продукта</p>
+          <blockquote data-i18n="ideaQuote">
+            Когда в библиотеке сотни книг, хорошие цитаты не должны теряться между страницами.
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section download" id="download">
+        <div class="download-card reveal">
+          <div>
+            <p class="section-label" data-i18n="launchLabel">Запуск</p>
+            <h2 data-i18n="launchTitle">Сайт уже готов к локальному просмотру</h2>
+            <p data-i18n="launchText">Откройте страницу из папки проекта или подключите её как промо-сайт для приложения.</p>
+          </div>
+          <div class="code-box">
+            <span data-i18n="fileLabel">Файл</span>
+            <strong>site/index.html</strong>
+            <p data-i18n="fileText">Можно открыть прямо в браузере без сборки.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
