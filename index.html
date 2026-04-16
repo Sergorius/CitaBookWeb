@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuoteFinder | Поиск цитат в книгах</title>
+  <meta name="description" content="QuoteFinder помогает находить яркие цитаты в EPUB и FB2, сохранять их в базе и возвращаться к любимым фрагментам за секунды.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand">
+          <img src="./assets/logo.svg" alt="Логотип QuoteFinder">
+          <div>
+            <p class="eyebrow">Desktop App</p>
+            <strong>QuoteFinder</strong>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <a href="#features">Возможности</a>
+          <a href="#workflow">Как это работает</a>
+          <a class="button ghost" href="#download">Запустить проект</a>
+        </div>
+      </nav>
+
+      <section class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="kicker">Поиск цитат без ручного перелистывания</p>
+          <h1>Красивый и быстрый способ находить сильные фразы в вашей библиотеке книг</h1>
+          <p class="hero-text">
+            Приложение сканирует EPUB и FB2, ищет совпадения по ключевым словам,
+            сохраняет любимые фрагменты в базу и открывает цитаты в аккуратных карточках.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#download">Открыть локально</a>
+            <a class="button secondary" href="#features">Посмотреть возможности</a>
+          </div>
+          <ul class="hero-points">
+            <li>Поиск по коллекции книг за секунды</li>
+            <li>Поддержка EPUB и FB2</li>
+            <li>Русский, English и Slovenčina</li>
+          </ul>
+        </div>
+
+        <div class="hero-panel reveal delay-1">
+          <div class="window-card">
+            <div class="window-top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="window-body">
+              <aside class="side-list">
+                <p>Библиотека</p>
+                <div class="book-pill active">451° по Фаренгейту</div>
+                <div class="book-pill">Мастер и Маргарита</div>
+                <div class="book-pill">Pride and Prejudice</div>
+              </aside>
+              <div class="search-preview">
+                <div class="search-box">искать: свобода</div>
+                <div class="quote-card">
+                  <span class="tag">Найдено</span>
+                  <h3>Цитата дня</h3>
+                  <p>
+                    «Мы нуждаемся не в том, чтобы на нас сыпались факты, а в том,
+                    чтобы научиться видеть в них смысл».
+                  </p>
+                  <div class="meta">
+                    <span>EPUB / FB2</span>
+                    <span>Saved to SQLite</span>
+                  </div>
+                </div>
+                <div class="stats-row">
+                  <div>
+                    <strong>3</strong>
+                    <span>языка интерфейса</span>
+                  </div>
+                  <div>
+                    <strong>2</strong>
+                    <span>формата книг</span>
+                  </div>
+                  <div>
+                    <strong>1</strong>
+                    <span>коллекция цитат</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-note">
+            <span>Новая находка</span>
+            <strong>Сохраняйте цитаты двойным кликом</strong>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section intro reveal">
+        <div class="section-head">
+          <p class="section-label">Для кого</p>
+          <h2>Подходит читателям, авторам, преподавателям и всем, кто собирает сильные мысли</h2>
+        </div>
+        <div class="intro-grid">
+          <article>
+            <h3>Читатели</h3>
+            <p>Собирайте любимые фрагменты в одной базе и возвращайтесь к ним без повторного поиска по файлам.</p>
+          </article>
+          <article>
+            <h3>Исследователи</h3>
+            <p>Находите упоминания тем, мотивов и ключевых формулировок сразу по всей локальной библиотеке.</p>
+          </article>
+          <article>
+            <h3>Команды и преподаватели</h3>
+            <p>Готовьте подборки цитат для лекций, заметок, презентаций и творческих проектов заметно быстрее.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section features" id="features">
+        <div class="section-head reveal">
+          <p class="section-label">Возможности</p>
+          <h2>Функции, которые делают поиск по книгам действительно удобным</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span>01</span>
+            <h3>Умный поиск по цитатам</h3>
+            <p>Введите слово или фразу, и приложение покажет найденные фрагменты вместе с книгой и автором.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <span>02</span>
+            <h3>Сканирование локальной папки</h3>
+            <p>Выберите каталог с книгами, а программа сама обработает EPUB и FB2 и добавит данные в базу.</p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <span>03</span>
+            <h3>Сохранённые цитаты</h3>
+            <p>Лучшие фрагменты не теряются: их можно сохранять, открывать в красивой карточке и удалять при необходимости.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>04</span>
+            <h3>Встроенный просмотр книг</h3>
+            <p>Карточки книг и режим чтения помогают быстро проверить контекст перед тем, как сохранить нужную мысль.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <span>05</span>
+            <h3>Многоязычный интерфейс</h3>
+            <p>Переключайтесь между русским, английским и словацким языком прямо в настройках приложения.</p>
+          </article>
+          <article class="feature-card accent reveal delay-2">
+            <span>06</span>
+            <h3>Локально и приватно</h3>
+            <p>SQLite-база хранится рядом с приложением, так что ваша библиотека и заметки остаются под вашим контролем.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workflow" id="workflow">
+        <div class="section-head reveal">
+          <p class="section-label">Сценарий</p>
+          <h2>Как выглядит работа с приложением</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <strong>1</strong>
+            <div>
+              <h3>Выбираете папку с книгами</h3>
+              <p>Приложение сканирует библиотеку и готовит тексты к быстрому поиску.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal delay-1">
+            <strong>2</strong>
+            <div>
+              <h3>Ищете слово, тему или формулировку</h3>
+              <p>Результаты сразу показывают цитату, название книги и автора.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal delay-2">
+            <strong>3</strong>
+            <div>
+              <h3>Сохраняете лучшие находки</h3>
+              <p>Избранные фрагменты попадают в отдельную коллекцию, к которой легко вернуться позже.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quote-band reveal">
+        <div class="quote-band-card">
+          <p class="section-label">Идея продукта</p>
+          <blockquote>
+            Когда в библиотеке сотни книг, хорошие цитаты не должны теряться между страницами.
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section download" id="download">
+        <div class="download-card reveal">
+          <div>
+            <p class="section-label">Запуск</p>
+            <h2>Сайт уже готов к локальному просмотру</h2>
+            <p>Откройте страницу из папки проекта или подключите её как промо-сайт для приложения.</p>
+          </div>
+          <div class="code-box">
+            <span>Файл</span>
+            <strong>site/index.html</strong>
+            <p>Можно открыть прямо в браузере без сборки.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
